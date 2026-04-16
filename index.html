@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <meta name="description" content="梅州市新得润电子有限公司 - 专业生产接线端子、线束、连接器，支持定制，品质保障。广泛应用于安防、照明、工业自动化等领域。">
-    <title>梅州市新得润电子有限公司 | 专业接线端子&线束制造商</title>
-    <!-- Font Awesome 6 -->
+    <meta name="description" content="梅州市新得润电子有限公司 - 专业接线端子、线束制造商。点击卡片直达淘宝店铺，查看PH2.0/XH2.54/杜邦/排线全系产品。">
+    <title>新得润电子 | 高端端子线束专家</title>
+    <!-- Font Awesome 6 (免费图标库) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <!-- Google Fonts Inter -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
@@ -15,36 +15,30 @@
             padding: 0;
             box-sizing: border-box;
         }
-
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #f8fafd;
-            color: #1e293b;
+            background-color: #f9fafb;
+            color: #111827;
             line-height: 1.5;
         }
-
-        /* 平滑滚动 */
         html {
             scroll-behavior: smooth;
         }
-
-        /* 容器 */
         .container {
             max-width: 1280px;
             margin: 0 auto;
             padding: 0 24px;
         }
-
-        /* 导航栏 */
+        /* 高级导航 */
         .navbar {
-            background: #ffffff;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03), 0 1px 2px rgba(0, 0, 0, 0.05);
+            background: rgba(255, 255, 255, 0.96);
+            backdrop-filter: blur(12px);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.02), 0 4px 12px rgba(0,0,0,0.03);
             position: sticky;
             top: 0;
             z-index: 1000;
-            backdrop-filter: blur(2px);
+            border-bottom: 1px solid rgba(0,0,0,0.05);
         }
-
         .nav-container {
             display: flex;
             align-items: center;
@@ -52,200 +46,240 @@
             flex-wrap: wrap;
             padding: 1rem 0;
         }
-
         .logo h1 {
-            font-size: 1.5rem;
-            font-weight: 700;
-            background: linear-gradient(135deg, #1e4b8f, #2c6e9e);
+            font-size: 1.7rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #0a3a52, #1c6f8c, #2c9e8c);
             background-clip: text;
             -webkit-background-clip: text;
             color: transparent;
             letter-spacing: -0.3px;
         }
-
         .logo p {
-            font-size: 0.75rem;
-            color: #4b5563;
+            font-size: 0.7rem;
             font-weight: 500;
-            margin-top: 4px;
+            color: #4b6e8a;
+            margin-top: 2px;
         }
-
         .nav-links {
             display: flex;
             gap: 2rem;
             list-style: none;
         }
-
         .nav-links a {
             text-decoration: none;
             font-weight: 600;
             color: #1f2937;
             transition: 0.2s;
-            font-size: 1rem;
-            padding: 0.5rem 0;
+            font-size: 0.95rem;
+            padding: 0.4rem 0;
             border-bottom: 2px solid transparent;
         }
-
         .nav-links a:hover, .nav-links a.active {
-            color: #1e6f9f;
-            border-bottom-color: #1e6f9f;
+            color: #1c7e9c;
+            border-bottom-color: #1c7e9c;
         }
-
-        /* 页面容器 */
+        /* 页面切换 */
         .page {
             display: none;
-            animation: fadeIn 0.35s ease;
+            animation: fadeIn 0.4s ease;
         }
-
         .active-page {
             display: block;
         }
-
         @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(8px);}
+            from { opacity: 0; transform: translateY(12px);}
             to { opacity: 1; transform: translateY(0);}
         }
-
-        /* Hero 区域 */
-        .hero {
-            background: linear-gradient(110deg, #eef2ff 0%, #ffffff 80%);
-            border-radius: 2rem;
-            margin: 2rem 0;
-            padding: 3rem 2rem;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.02);
-        }
-
-        .hero h2 {
-            font-size: 2.5rem;
-            font-weight: 800;
-            color: #0c4a6e;
-            margin-bottom: 1rem;
-        }
-
-        .hero p {
-            font-size: 1.1rem;
-            color: #334155;
-            max-width: 700px;
-            margin-bottom: 1.5rem;
-        }
-
+        /* 按钮样式 */
         .btn {
             display: inline-block;
-            background-color: #1e6f9f;
+            background: linear-gradient(100deg, #1c6f8c, #2c9e9e);
             color: white;
-            padding: 0.75rem 1.8rem;
+            padding: 0.7rem 1.8rem;
             border-radius: 40px;
             text-decoration: none;
             font-weight: 600;
-            transition: 0.2s;
+            transition: all 0.25s;
             border: none;
             cursor: pointer;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
         }
-
         .btn-outline {
             background: transparent;
-            border: 1.5px solid #1e6f9f;
-            color: #1e6f9f;
+            border: 1.5px solid #1c7e9c;
+            color: #1c7e9c;
+            box-shadow: none;
         }
-
         .btn-outline:hover {
-            background: #1e6f9f;
+            background: #1c7e9c;
             color: white;
-        }
-
-        .btn:hover {
-            background-color: #0f4e73;
             transform: translateY(-2px);
         }
-
-        /* 通用卡片 */
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 18px rgba(28,126,156,0.2);
+        }
+        /* 首页高级区域 */
+        .hero {
+            background: linear-gradient(145deg, #ffffff 0%, #f1f7fc 100%);
+            border-radius: 2rem;
+            margin: 2rem 0;
+            padding: 3rem 2rem;
+            box-shadow: 0 12px 30px -10px rgba(0,0,0,0.05);
+            border: 1px solid rgba(28,126,156,0.1);
+        }
+        .hero h2 {
+            font-size: 2.8rem;
+            font-weight: 800;
+            color: #0a3a52;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.1rem;
+            color: #2c475e;
+            max-width: 600px;
+            margin-bottom: 2rem;
+        }
         .section-title {
             font-size: 2rem;
             font-weight: 700;
-            margin: 2.5rem 0 1.5rem 0;
+            margin: 2.8rem 0 1.5rem 0;
             position: relative;
             display: inline-block;
         }
         .section-title:after {
             content: '';
             position: absolute;
-            bottom: -10px;
+            bottom: -12px;
             left: 0;
             width: 60px;
             height: 4px;
-            background: #1e6f9f;
-            border-radius: 4px;
+            background: linear-gradient(90deg, #1c7e9c, #7bc5c0);
+            border-radius: 2px;
         }
-
-        .grid-3 {
+        /* 卡片网格 */
+        .grid-cards {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
             gap: 2rem;
             margin: 2rem 0;
         }
-
-        .card {
+        .shop-card {
             background: white;
             border-radius: 1.5rem;
-            padding: 1.5rem;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.02), 0 2px 6px rgba(0,0,0,0.05);
-            transition: all 0.2s;
-            border: 1px solid #e9eef3;
+            padding: 1.8rem;
+            transition: all 0.25s ease;
+            border: 1px solid #eef2f8;
+            box-shadow: 0 6px 12px -6px rgba(0,0,0,0.03);
+            cursor: pointer;
+            text-align: center;
         }
-
-        .card:hover {
-            transform: translateY(-5px);
+        .shop-card:hover {
+            transform: translateY(-6px);
+            border-color: #cbdde9;
             box-shadow: 0 20px 30px -12px rgba(0,0,0,0.1);
+            background: #ffffff;
         }
-
-        .card i {
-            font-size: 2.2rem;
-            color: #1e6f9f;
+        .shop-card i {
+            font-size: 2.6rem;
+            color: #1c7e9c;
             margin-bottom: 1rem;
         }
-
-        .badge-list {
+        .shop-card h3 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: #0f3b5c;
+        }
+        .shop-card p {
+            color: #4a627a;
+            font-size: 0.9rem;
+            margin-bottom: 1.2rem;
+        }
+        .taobao-tag {
+            display: inline-block;
+            background: #ff6b6b10;
+            color: #d9534f;
+            font-size: 0.75rem;
+            font-weight: 600;
+            padding: 0.2rem 1rem;
+            border-radius: 30px;
+            border: 0.5px solid #ffc2c2;
+        }
+        .badge-group {
             display: flex;
             flex-wrap: wrap;
             gap: 0.6rem;
+            justify-content: center;
             margin-top: 1rem;
         }
         .badge {
             background: #eef2ff;
             color: #1e4b8f;
-            padding: 0.3rem 1rem;
+            padding: 0.25rem 1rem;
             border-radius: 30px;
-            font-size: 0.8rem;
+            font-size: 0.75rem;
             font-weight: 500;
         }
-
-        .product-category {
+        .stats-bar {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            background: white;
+            border-radius: 2rem;
+            padding: 1.5rem 2rem;
+            margin: 2rem 0;
+            border: 1px solid #eef2f8;
+        }
+        .stat-item {
+            text-align: center;
+            flex: 1;
+        }
+        .stat-number {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: #1c7e9c;
+        }
+        /* 产品中心内部样式 (无图片，纯卡片跳转) */
+        .product-showcase {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 1.8rem;
+            margin: 2rem 0;
+        }
+        .product-card {
             background: white;
             border-radius: 1.5rem;
             padding: 1.5rem;
-            margin-bottom: 2rem;
+            text-align: center;
+            transition: all 0.2s;
             border: 1px solid #eef2f8;
+            cursor: pointer;
         }
-        .product-category h3 {
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-            color: #0f3b5c;
-            border-left: 5px solid #1e6f9f;
-            padding-left: 1rem;
+        .product-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 15px 25px -10px rgba(0,0,0,0.08);
+            border-color: #cde1ed;
         }
-
-        .model-tag {
-            display: inline-block;
-            background: #f1f5f9;
-            padding: 0.3rem 1rem;
-            border-radius: 30px;
-            font-size: 0.85rem;
-            margin: 0.25rem;
-            font-family: monospace;
-            font-weight: 500;
+        .product-icon {
+            font-size: 2.4rem;
+            color: #2c9e8c;
+            margin-bottom: 0.8rem;
         }
-
-        /* 联系信息卡 */
+        .product-card h4 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 0.3rem;
+        }
+        .product-category {
+            background: #f8fafd;
+            border-radius: 1.5rem;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            border: 1px solid #e9edf2;
+        }
         .contact-info-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -256,86 +290,60 @@
             background: white;
             border-radius: 1.5rem;
             padding: 2rem;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.03);
+            border: 1px solid #eef2f8;
         }
         .info-item {
             display: flex;
             align-items: center;
             gap: 1rem;
-            margin-bottom: 1.5rem;
+            margin-bottom: 1.2rem;
         }
         .info-item i {
-            width: 42px;
-            height: 42px;
+            width: 40px;
+            height: 40px;
             background: #eef2ff;
             border-radius: 50%;
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            color: #1e6f9f;
-            font-size: 1.2rem;
-        }
-        .contact-person {
-            background: #eef2ff;
-            padding: 1rem;
-            border-radius: 1rem;
-            margin-top: 1rem;
+            color: #1c7e9c;
         }
         .footer {
             background: #0f172a;
             color: #cbd5e1;
-            padding: 2.5rem 0;
-            margin-top: 4rem;
-            font-size: 0.9rem;
+            padding: 2rem 0;
+            margin-top: 3rem;
         }
-        .footer .container {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-        }
-        .footer a {
-            color: #94a3b8;
-            text-decoration: none;
-        }
-        .copy {
-            border-top: 1px solid #1e293b;
-            padding-top: 1rem;
-            margin-top: 0.5rem;
-            text-align: center;
-        }
-
-        /* 悬浮窗 + 模态框样式 */
         .float-wechat {
             position: fixed;
-            bottom: 30px;
-            right: 30px;
-            z-index: 1100;
-            cursor: pointer;
-            background-color: #2c9b6b;
-            width: 60px;
-            height: 60px;
+            bottom: 28px;
+            right: 28px;
+            background: #2c9b6b;
+            width: 56px;
+            height: 56px;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            box-shadow: 0 6px 16px rgba(0,0,0,0.2);
-            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+            cursor: pointer;
+            z-index: 1100;
             color: white;
-            font-size: 28px;
+            font-size: 26px;
+            transition: 0.2s;
         }
         .float-wechat:hover {
-            transform: scale(1.08);
-            box-shadow: 0 10px 24px rgba(0,0,0,0.25);
-            background-color: #1f7a52;
+            transform: scale(1.05);
+            background: #1f7a52;
         }
-        /* 模态框背景 */
         .modal-overlay {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.6);
+            background: rgba(0,0,0,0.5);
             backdrop-filter: blur(4px);
             z-index: 1200;
             display: none;
@@ -347,113 +355,44 @@
             max-width: 340px;
             width: 85%;
             border-radius: 2rem;
-            padding: 1.8rem 1.5rem;
+            padding: 1.5rem;
             text-align: center;
             position: relative;
-            animation: modalPop 0.2s ease;
-            box-shadow: 0 25px 40px rgba(0,0,0,0.2);
-        }
-        @keyframes modalPop {
-            from { opacity: 0; transform: scale(0.92);}
-            to { opacity: 1; transform: scale(1);}
-        }
-        .modal-content h3 {
-            font-size: 1.6rem;
-            color: #1e6f9f;
-            margin-bottom: 1rem;
-        }
-        .wechat-qr-sim {
-            width: 160px;
-            height: 160px;
-            background: #f1f5f9;
-            margin: 1rem auto;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            border-radius: 20px;
-            border: 1px solid #e2e8f0;
-            color: #334155;
-        }
-        .wechat-qr-sim i {
-            font-size: 64px;
-            color: #2c9b6b;
-            margin-bottom: 8px;
         }
         .wechat-number {
             background: #f1f5f9;
-            padding: 10px 12px;
+            padding: 10px;
             border-radius: 40px;
             font-weight: 600;
-            font-size: 1.1rem;
-            margin: 16px 0 12px;
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            letter-spacing: 1px;
+            margin: 1rem 0;
         }
         .copy-btn {
-            background: #1e6f9f;
+            background: #1c7e9c;
             color: white;
             border: none;
             padding: 8px 20px;
             border-radius: 40px;
-            font-weight: 500;
             cursor: pointer;
-            margin-top: 8px;
-            transition: 0.2s;
-        }
-        .copy-btn:hover {
-            background: #0f4e73;
-        }
-        .close-modal {
-            position: absolute;
-            top: 16px;
-            right: 20px;
-            font-size: 24px;
-            cursor: pointer;
-            color: #94a3b8;
-            transition: 0.2s;
-        }
-        .close-modal:hover {
-            color: #1e293b;
-        }
-        .tip-text {
-            font-size: 0.8rem;
-            color: #5b6e8c;
-            margin-top: 12px;
         }
         @media (max-width: 768px) {
-            .nav-container {
-                flex-direction: column;
-                gap: 1rem;
-            }
-            .hero h2 {
-                font-size: 1.8rem;
-            }
-            .contact-info-grid {
-                grid-template-columns: 1fr;
-            }
-            .container {
-                padding: 0 20px;
-            }
-            .float-wechat {
-                bottom: 20px;
-                right: 20px;
-                width: 52px;
-                height: 52px;
-                font-size: 24px;
-            }
+            .hero h2 { font-size: 2rem; }
+            .contact-info-grid { grid-template-columns: 1fr; }
+            .nav-container { flex-direction: column; gap: 0.8rem; }
+            .stats-bar { flex-direction: column; gap: 1rem; }
+        }
+        .click-hint {
+            font-size: 0.7rem;
+            margin-top: 12px;
+            color: #8ba0bc;
         }
     </style>
 </head>
 <body>
-
 <header class="navbar">
     <div class="container nav-container">
         <div class="logo">
             <h1>新得润电子</h1>
-            <p>梅州市新得润电子有限公司</p>
+            <p>专业端子线束 · 智造专家</p>
         </div>
         <ul class="nav-links">
             <li><a href="#" data-page="home" class="nav-link active">首页</a></li>
@@ -464,179 +403,180 @@
 </header>
 
 <main class="container">
-    <!-- 首页内容 -->
+    <!-- 首页 - 高级无实拍图布局 -->
     <div id="home-page" class="page active-page">
         <div class="hero">
-            <h2>专业接线端子 · 线束 · 连接器制造商</h2>
-            <p>梅州市新得润电子有限公司，多年为知名品牌提供配套产品及服务，可按客户需求定制各类电子线、端子线、连接器。品质为本，服务至上。</p>
-            <a href="#" class="btn" data-page-link="products">查看产品系列 →</a>
+            <h2>高端接线端子 & 线束定制<br>精准连接 · 品质智造</h2>
+            <p>梅州市新得润电子有限公司 — 为安防、照明、工业自动化提供可靠连接方案。点击下方卡片，直达淘宝店铺查看全系列产品。</p>
+            <a href="#" class="btn" data-page-link="products">探索产品系列 →</a>
         </div>
 
+        <!-- 核心产品快捷入口（跳转淘宝） -->
         <div>
-            <h3 class="section-title">核心优势</h3>
-            <div class="grid-3">
-                <div class="card"><i class="fas fa-microchip"></i><h3>先进设备</h3><p>行业领先的自动化生产及检测设备，高精密制造保障。</p></div>
-                <div class="card"><i class="fas fa-flask"></i><h3>技术实力</h3><p>资深工程团队，支持线束定制、端子模具开发及快速打样。</p></div>
-                <div class="card"><i class="fas fa-certificate"></i><h3>品质体系</h3><p>严控ISO流程，全检出货，符合RoHS/REACH标准。</p></div>
+            <h3 class="section-title">热门系列 · 一键进店</h3>
+            <div class="grid-cards">
+                <div class="shop-card" onclick="window.open('https://shop123845263.taobao.com/', '_blank')">
+                    <i class="fas fa-plug"></i>
+                    <h3>PH2.0 / XH2.54</h3>
+                    <p>间距2.0/2.54mm端子线，镀锡铜，定制长度</p>
+                    <span class="taobao-tag"><i class="fab fa-taobao"></i> 淘宝店铺查看</span>
+                </div>
+                <div class="shop-card" onclick="window.open('https://shop123845263.taobao.com/', '_blank')">
+                    <i class="fas fa-microchip"></i>
+                    <h3>1.25mm 超细间距</h3>
+                    <p>高密度连接器专用，适用于精密仪器</p>
+                    <span class="taobao-tag"><i class="fab fa-taobao"></i> 淘宝店铺查看</span>
+                </div>
+                <div class="shop-card" onclick="window.open('https://shop123845263.taobao.com/', '_blank')">
+                    <i class="fas fa-project-diagram"></i>
+                    <h3>杜邦2.54 端子线</h3>
+                    <p>实验/开发板专用，40P/排线，可靠压接</p>
+                    <span class="taobao-tag"><i class="fab fa-taobao"></i> 淘宝店铺查看</span>
+                </div>
+                <div class="shop-card" onclick="window.open('https://shop123845263.taobao.com/', '_blank')">
+                    <i class="fas fa-waveform"></i>
+                    <h3>红白/蓝白排线</h3>
+                    <p>PH2.0 / XH2.54 红白排线、蓝白排线</p>
+                    <span class="taobao-tag"><i class="fab fa-taobao"></i> 淘宝店铺查看</span>
+                </div>
             </div>
         </div>
 
+        <!-- 优势统计 -->
+        <div class="stats-bar">
+            <div class="stat-item"><div class="stat-number">10万+</div><div>日产能(条)</div></div>
+            <div class="stat-item"><div class="stat-number">24h</div><div>快速打样</div></div>
+            <div class="stat-item"><div class="stat-number">100%</div><div>全检出货</div></div>
+            <div class="stat-item"><div class="stat-number">ROHS</div><div>环保认证</div></div>
+        </div>
+
+        <!-- 全系列标签 + 跳转引导 -->
         <div>
-            <h3 class="section-title">应用领域</h3>
-            <div class="badge-list">
-                <span class="badge">🔒 安防监控</span>
-                <span class="badge">💡 照明灯具</span>
-                <span class="badge">⚙️ 工业自动化</span>
-                <span class="badge">🔋 电源设备</span>
-                <span class="badge">📊 电力仪表</span>
-                <span class="badge">🌿 新能源</span>
-                <span class="badge">🚗 汽车电子</span>
+            <h3 class="section-title">全系列端子 & 线材</h3>
+            <div class="badge-group" style="justify-content: flex-start;">
+                <span class="badge">XH/VH/EH</span>
+                <span class="badge">PH/ZH/SM</span>
+                <span class="badge">杜邦/2510/5264</span>
+                <span class="badge">UL1007/1571/1061</span>
+                <span class="badge">硅胶线/屏蔽线</span>
+                <span class="badge">胶壳/针座/SMD</span>
+            </div>
+            <div style="margin-top: 1.5rem; text-align: center;">
+                <a href="#" class="btn btn-outline" data-page-link="products">查看完整产品目录 →</a>
             </div>
         </div>
 
-        <div style="margin: 2rem 0;">
-            <h3 class="section-title">主营类目速览</h3>
-            <div class="grid-3">
-                <div class="card"><i class="fas fa-plug"></i><h3>接线端子系列</h3><p>XH / PH / VH / SM / 杜邦 / 5557 / 2510 / 5264 / JC20 / 大4P 等全系列。</p></div>
-                <div class="card"><i class="fas fa-wire"></i><h3>电子线束 & 线材</h3><p>UL1007/1571/1061/1015，硅胶线，屏蔽线，红白排线，OK线，单支线。</p></div>
-                <div class="card"><i class="fas fa-th-large"></i><h3>胶壳/针座/贴片</h3><p>配套胶壳，针座，SMD贴片，Y型端，圆型端，管型端，插簧等。</p></div>
-            </div>
+        <!-- 淘宝直通引导 -->
+        <div style="background: linear-gradient(120deg, #eef3fa, #ffffff); border-radius: 1.8rem; padding: 1.8rem; margin: 2.5rem 0; text-align: center;">
+            <i class="fab fa-taobao" style="font-size: 2.5rem; color: #ff6600;"></i>
+            <h3 style="margin: 0.5rem 0; color:#0c4a6e;">点击任意产品卡片，直接跳转淘宝店铺</h3>
+            <p style="color: #2c475e;">更多型号、价格、优惠请进店咨询，支持小批量定制。</p>
+            <button class="btn" style="margin-top: 1rem;" onclick="window.open('https://shop123845263.taobao.com/', '_blank')">立即进店选购 <i class="fas fa-arrow-right"></i></button>
         </div>
     </div>
 
-    <!-- 产品页面 -->
+    <!-- 产品中心页 (无任何实拍图片，全卡片跳转淘宝) -->
     <div id="products-page" class="page">
-        <h2 class="section-title" style="margin-top: 1rem;">产品中心</h2>
-        <p class="intro-text" style="margin-bottom: 1rem;">我们提供完整的线束连接方案，全系列端子、线材及客制化服务，满足多行业高标准要求。</p>
-        
-        <!-- 电子线/线束成品系列 -->
+        <h2 class="section-title" style="margin-top: 1rem;">产品中心 · 点击卡片跳转淘宝</h2>
+        <p class="intro-text" style="margin-bottom: 1rem;">专业生产接线端子、电子线束、排线。以下系列均可定制，点击卡片直达店铺查看详情。</p>
+        <div class="product-showcase">
+            <div class="product-card" onclick="window.open('https://shop123845263.taobao.com/', '_blank')">
+                <div class="product-icon"><i class="fas fa-bolt"></i></div>
+                <h4>PH2.0 端子线</h4>
+                <p>间距2.0mm，配套胶壳/针座，UL认证线材</p>
+                <span class="taobao-tag">进店查看</span>
+            </div>
+            <div class="product-card" onclick="window.open('https://shop123845263.taobao.com/', '_blank')">
+                <div class="product-icon"><i class="fas fa-link"></i></div>
+                <h4>XH2.54 端子线</h4>
+                <p>通用工业级，耐温105℃，镀锡/镀金端子</p>
+                <span class="taobao-tag">进店查看</span>
+            </div>
+            <div class="product-card" onclick="window.open('https://shop123845263.taobao.com/', '_blank')">
+                <div class="product-icon"><i class="fas fa-microchip"></i></div>
+                <h4>1.25mm 端子线</h4>
+                <p>超窄间距，SH/ZH兼容，适用于精密设备</p>
+                <span class="taobao-tag">进店查看</span>
+            </div>
+            <div class="product-card" onclick="window.open('https://shop123845263.taobao.com/', '_blank')">
+                <div class="product-icon"><i class="fas fa-th"></i></div>
+                <h4>杜邦2.54 端子线</h4>
+                <p>标准杜邦公母头，单排/双排，实验板专用</p>
+                <span class="taobao-tag">进店查看</span>
+            </div>
+            <div class="product-card" onclick="window.open('https://shop123845263.taobao.com/', '_blank')">
+                <div class="product-icon"><i class="fas fa-waveform"></i></div>
+                <h4>PH2.0 蓝白排线</h4>
+                <p>蓝白双色排线，信号识别清晰，定制长度</p>
+                <span class="taobao-tag">进店查看</span>
+            </div>
+            <div class="product-card" onclick="window.open('https://shop123845263.taobao.com/', '_blank')">
+                <div class="product-icon"><i class="fas fa-waveform"></i></div>
+                <h4>XH2.54 蓝白排线</h4>
+                <p>高韧性PVC排线，蓝白双色，耐插拔</p>
+                <span class="taobao-tag">进店查看</span>
+            </div>
+            <div class="product-card" onclick="window.open('https://shop123845263.taobao.com/', '_blank')">
+                <div class="product-icon"><i class="fas fa-chart-line"></i></div>
+                <h4>PH2.0 红白排线</h4>
+                <p>红白双色线序，防误插设计，广泛用于控制板</p>
+                <span class="taobao-tag">进店查看</span>
+            </div>
+            <div class="product-card" onclick="window.open('https://shop123845263.taobao.com/', '_blank')">
+                <div class="product-icon"><i class="fas fa-chart-line"></i></div>
+                <h4>XH2.54 红白排线</h4>
+                <p>经典红白线，导体镀锡铜，环保ROHS</p>
+                <span class="taobao-tag">进店查看</span>
+            </div>
+        </div>
+
+        <!-- 更多规格 -->
         <div class="product-category">
-            <h3><i class="fas fa-bolt"></i> 电子线 & 线束成品系列</h3>
-            <p>加工各类电子线、端子线、屏蔽线、硅胶线、铁轨龙线、红白排蓝白排、PVC/PE/UL电子线、OK线、单支线、针座、胶壳、贴片等。</p>
-            <div class="badge-list">
-                <span class="badge">端子线（杜邦/XH/PH）</span>
-                <span class="badge">UL电子线</span>
+            <h3><i class="fas fa-cubes"></i> 其他线材 & 连接器</h3>
+            <div class="badge-group">
+                <span class="badge">UL1007/1571/1061电子线</span>
                 <span class="badge">硅胶高温线</span>
                 <span class="badge">屏蔽线/RVV</span>
-                <span class="badge">红白排线</span>
-                <span class="badge">铁轨龙线</span>
-                <span class="badge">OK线/跳线</span>
-                <span class="badge">PVC/PE电子线</span>
-                <span class="badge">单支/多股线</span>
-            </div>
-        </div>
-
-        <!-- 线材型号 (UL标准) -->
-        <div class="product-category">
-            <h3><i class="fas fa-tachometer-alt"></i> 线材型号（UL系列 & 特种线）</h3>
-            <div>
-                <span class="model-tag">1007</span> <span class="model-tag">1571</span> <span class="model-tag">1061</span>
-                <span class="model-tag">1332</span> <span class="model-tag">3239</span> <span class="model-tag">1015</span>
-                <span class="model-tag">2468</span> <span class="model-tag">2547</span> <span class="model-tag">1533</span>
-                <span class="model-tag">2464</span> <span class="model-tag">其它定制UL/CSA线</span>
-            </div>
-            <p style="margin-top: 12px;">支持PVC绝缘、PE、硅橡胶、铁氟龙等多种材质，耐温耐压可选。</p>
-        </div>
-
-        <!-- 端子系列 (重点) -->
-        <div class="product-category">
-            <h3><i class="fas fa-link"></i> 端子连接器系列（间距/型号大全）</h3>
-            <div>
-                <span class="model-tag">SYP</span> <span class="model-tag">XHB</span> <span class="model-tag">XH</span>
-                <span class="model-tag">TJC3</span> <span class="model-tag">PH</span> <span class="model-tag">ZH</span>
-                <span class="model-tag">SM</span> <span class="model-tag">VH</span> <span class="model-tag">EH</span>
-                <span class="model-tag">SAN</span> <span class="model-tag">SCN</span> <span class="model-tag">1.0/1.25/1.5/2.0/2.5/3.96</span>
-                <span class="model-tag">2510</span> <span class="model-tag">5264</span> <span class="model-tag">5557</span>
-                <span class="model-tag">JC20</span> <span class="model-tag">JC25</span> <span class="model-tag">大4P</span>
-                <span class="model-tag">小4P</span> <span class="model-tag">TJC8</span> <span class="model-tag">杜邦</span>
-                <span class="model-tag">圆型端</span> <span class="model-tag">管型端</span> <span class="model-tag">插簧</span>
-                <span class="model-tag">Y型端</span>
-            </div>
-            <p style="margin-top: 12px;">包含配套胶壳、针座、端子及压接模具，支持散件/组装成品。</p>
-        </div>
-
-        <!-- 胶壳针座/贴片 -->
-        <div class="product-category">
-            <h3><i class="fas fa-microchip"></i> 胶壳 · 针座 · 贴片连接器</h3>
-            <div class="badge-list">
-                <span class="badge">XH胶壳/针座</span>
-                <span class="badge">PH/ZH胶壳</span>
-                <span class="badge">VH/EH胶壳</span>
-                <span class="badge">SM/5264胶壳</span>
-                <span class="badge">5557系列</span>
-                <span class="badge">2510针座</span>
-                <span class="badge">SMD贴片座</span>
+                <span class="badge">2510/5557/5264系列</span>
                 <span class="badge">JC20/25胶壳</span>
-                <span class="badge">杜邦公母座</span>
+                <span class="badge">Y型端/管型端</span>
             </div>
-            <p>全系列间距从1.0mm到3.96mm，满足高密度或大电流应用。</p>
-        </div>
-
-        <div style="background: #eef2ff; padding: 1.5rem; border-radius: 1.5rem; margin: 1rem 0 2rem;">
-            <i class="fas fa-cogs"></i> <strong>定制服务：</strong> 根据图纸或样品定制线束长度、端子型号、胶壳颜色、UL规格等，专业工程师提供解决方案。
+            <p style="margin-top: 1rem;">全系列支持定制长度、线规、颜色。点击上方任意卡片即可进店沟通，快速报价。</p>
         </div>
     </div>
 
-    <!-- 联系我们页面 -->
+    <!-- 联系我们页面 (不变，保留联系方式) -->
     <div id="contact-page" class="page">
         <h2 class="section-title" style="margin-top: 1rem;">联系我们</h2>
-        <p>无论您需要标准产品还是个性化定制，我们专业的团队将迅速响应。欢迎来电或莅临考察！</p>
-
+        <p>欢迎来电咨询或莅临工厂考察，也可通过淘宝店铺直接下单。</p>
         <div class="contact-info-grid">
             <div class="info-card">
                 <h3><i class="fas fa-building"></i> 公司信息</h3>
-                <div class="info-item">
-                    <i class="fas fa-company"></i>
-                    <div><strong>梅州市新得润电子有限公司</strong><br>Meizhou Xinderun Electronics Co.,Ltd</div>
-                </div>
-                <div class="info-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <div><strong>工厂地址</strong><br>广东省梅州市大埔县湖寮镇山子下村大沙坝旭平工业区6栋4楼新得润电子(1号电梯)</div>
-                </div>
-                <div class="info-item">
-                    <i class="fas fa-user-tie"></i>
-                    <div><strong>联系人</strong><br>黄小车</div>
-                </div>
-                <div class="info-item">
-                    <i class="fas fa-phone-alt"></i>
-                    <div><strong>联系方式</strong><br><a href="tel:15818510728" style="color:#1e6f9f; text-decoration:none;">158-1851-0728</a></div>
-                </div>
-                <div class="info-item">
-                    <i class="fas fa-envelope"></i>
-                    <div><strong>电子邮箱</strong><br>1316297969@qq.com (建议直拨电话)</div>
-                </div>
-                <div class="contact-person">
-                    <i class="fas fa-clock"></i> 工作时间：周一至周六 8:00-17:30<br>
-                    <i class="fas fa-check-circle"></i> 来厂前请电话预约，方便接待
-                </div>
+                <div class="info-item"><i class="fas fa-company"></i><div><strong>梅州市新得润电子有限公司</strong><br>Meizhou Xinderun Electronics Co.,Ltd</div></div>
+                <div class="info-item"><i class="fas fa-map-marker-alt"></i><div><strong>工厂地址</strong><br>广东省梅州市大埔县湖寮镇山子下村大沙坝旭平工业区6栋4楼(1号电梯)</div></div>
+                <div class="info-item"><i class="fas fa-user-tie"></i><div><strong>联系人</strong><br>黄小车</div></div>
+                <div class="info-item"><i class="fas fa-phone-alt"></i><div><strong>联系方式</strong><br><a href="tel:15818510728" style="color:#1c7e9c; text-decoration:none;">158-1851-0728</a></div></div>
+                <div class="info-item"><i class="fas fa-envelope"></i><div><strong>电子邮箱</strong><br>1316297969@qq.com</div></div>
+                <div class="contact-person"><i class="fas fa-clock"></i> 工作时间：周一至周六 8:00-17:30<br><i class="fas fa-check-circle"></i> 来厂前请电话预约</div>
             </div>
-
             <div class="info-card">
                 <h3><i class="fas fa-comment-dots"></i> 业务咨询</h3>
-                <p style="margin-bottom: 1rem;">请直接联系黄小车经理，或通过以下表单留言，我们会尽快与您对接。</p>
-                <form id="quick-form" action="#" method="post">
-                    <div style="margin-bottom: 1rem;">
-                        <input type="text" placeholder="您的姓名" style="width:100%; padding:12px; border-radius: 30px; border:1px solid #ccc;">
-                    </div>
-                    <div style="margin-bottom: 1rem;">
-                        <input type="tel" placeholder="联系电话" style="width:100%; padding:12px; border-radius: 30px; border:1px solid #ccc;">
-                    </div>
-                    <div style="margin-bottom: 1rem;">
-                        <textarea rows="3" placeholder="需求描述（端子型号/线长/数量）" style="width:100%; padding:12px; border-radius: 24px; border:1px solid #ccc;"></textarea>
-                    </div>
+                <p style="margin-bottom: 1rem;">直联黄小车经理，或通过表单留言，我们将第一时间响应。</p>
+                <form id="quick-form">
+                    <div style="margin-bottom: 1rem;"><input type="text" placeholder="您的姓名" style="width:100%; padding:12px; border-radius: 30px; border:1px solid #ccc;"></div>
+                    <div style="margin-bottom: 1rem;"><input type="tel" placeholder="联系电话" style="width:100%; padding:12px; border-radius: 30px; border:1px solid #ccc;"></div>
+                    <div style="margin-bottom: 1rem;"><textarea rows="3" placeholder="需求描述（型号/线长/数量）" style="width:100%; padding:12px; border-radius: 24px; border:1px solid #ccc;"></textarea></div>
                     <button type="button" class="btn" id="mockSubmitBtn">提交咨询</button>
                 </form>
-                <p style="margin-top: 1rem; font-size:0.85rem;">* 亦可直接致电 <strong>15818510728</strong> 黄小车，高效沟通。</p>
+                <p style="margin-top: 1rem;">* 也可直接致电 <strong>15818510728</strong> 黄小车，高效沟通。</p>
+                <hr style="margin: 1rem 0;">
+                <div onclick="window.open('https://shop123845263.taobao.com/', '_blank')" style="background:#f5f7fa; border-radius: 1rem; padding: 0.8rem; text-align: center; cursor: pointer;">
+                    <i class="fab fa-taobao" style="color:#ff6600;"></i> <strong>点击直达淘宝店铺</strong> → 查看所有产品及价格
+                </div>
             </div>
         </div>
-
-        <!-- 地图占位 (优雅展示地址) -->
-        <div style="background:#e9edf2; border-radius: 1.5rem; overflow: hidden; margin-top: 1rem;">
-            <div style="background:#cbd5e1; height: 180px; display: flex; align-items: center; justify-content: center; flex-direction: column; color:#2c3e50;">
-                <i class="fas fa-map" style="font-size: 3rem; opacity: 0.6;"></i>
-                <p style="margin-top: 8px;">📍 广东省梅州市大埔县湖寮镇山子下村大沙坝旭平工业区6栋4楼</p>
-                <p style="font-size:0.8rem;">高德/百度地图可导航“旭平工业区”，1号电梯直达4楼新得润电子</p>
-            </div>
+        <div style="background:#eef2f6; border-radius: 1.5rem; padding: 1.2rem; text-align: center; margin-top: 1rem;">
+            <i class="fas fa-map-pin"></i> 广东省梅州市大埔县湖寮镇山子下村大沙坝旭平工业区6栋4楼 (1号电梯)
         </div>
     </div>
 </main>
@@ -644,147 +584,76 @@
 <footer class="footer">
     <div class="container">
         <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem;">
-            <div>
-                <h3 style="color:white; margin-bottom: 8px;">梅州市新得润电子有限公司</h3>
-                <p><i class="fas fa-location-dot"></i> 广东省梅州市大埔县湖寮镇山子下村大沙坝旭平工业区6栋4楼(1号电梯)</p>
-                <p><i class="fas fa-user"></i> 联系人：黄小车 &nbsp;|&nbsp; <i class="fas fa-phone"></i> 15818510728</p>
-            </div>
-            <div>
-                <p><i class="fas fa-certificate"></i> 专业接线端子 · 线束定制</p>
-                <p><i class="fas fa-shield-alt"></i> 质量为本 · 客户至上</p>
-            </div>
+            <div><h3 style="color:white;">梅州市新得润电子有限公司</h3><p><i class="fas fa-location-dot"></i> 大埔县湖寮镇旭平工业区6栋4楼</p><p><i class="fas fa-user"></i> 黄小车 15818510728</p></div>
+            <div><p><i class="fas fa-certificate"></i> 专业接线端子 · 线束定制</p><p><i class="fab fa-taobao"></i> 淘宝店铺：新得润端子线厂家</p><p>点击任意卡片直接跳转淘宝</p></div>
         </div>
-        <div class="copy">
-            © 2026 梅州市新得润电子有限公司 | 技术支持 | 本网站展示产品均可按需定制
-        </div>
+        <div class="copy" style="border-top: 1px solid #1e293b; margin-top: 1rem; padding-top: 1rem; text-align: center;">© 2026 梅州市新得润电子有限公司 | 品质为本 客户至上</div>
     </div>
 </footer>
 
-<!-- 微信悬浮窗口 + 模态框 -->
-<div class="float-wechat" id="wechatFloatBtn">
-    <i class="fab fa-weixin"></i>
-</div>
-
+<div class="float-wechat" id="wechatFloatBtn"><i class="fab fa-weixin"></i></div>
 <div class="modal-overlay" id="wechatModal">
     <div class="modal-content">
-        <span class="close-modal" id="closeModalBtn">&times;</span>
-        <h3><i class="fab fa-weixin" style="color:#2c9b6b;"></i> 添加微信</h3>
-        <div class="wechat-qr-sim">
-            <i class="fab fa-weixin"></i>
-            <span style="font-size: 12px;">微信扫一扫</span>
-            <span style="font-size: 10px; margin-top: 6px;">或直接添加好友</span>
-        </div>
-        <div class="wechat-number">
-            <i class="fab fa-weixin"></i> 微信号：15818510728
-        </div>
+        <span style="float:right; cursor:pointer; font-size:24px;" id="closeModalBtn">&times;</span>
+        <h3><i class="fab fa-weixin"></i> 添加微信</h3>
+        <div style="background:#f1f5f9; width:120px; height:120px; margin:1rem auto; border-radius: 20px; display: flex; align-items: center; justify-content: center;"><i class="fab fa-weixin" style="font-size: 64px; color:#2c9b6b;"></i></div>
+        <div class="wechat-number"><i class="fab fa-weixin"></i> 微信号：15818510728</div>
         <button class="copy-btn" id="copyWechatBtn">复制微信号</button>
-        <div class="tip-text">
-            <i class="fas fa-user-circle"></i> 联系人：黄小车<br>
-            也可直接拨打 15818510728
-        </div>
+        <p style="margin-top: 12px; font-size:0.75rem;">联系人：黄小车<br>也可直接拨打 15818510728</p>
     </div>
 </div>
 
 <script>
-    // 页面跳转逻辑 (单页切换)
+    // 页面切换逻辑
     const pages = {
         home: document.getElementById('home-page'),
         products: document.getElementById('products-page'),
         contact: document.getElementById('contact-page')
     };
     const navLinks = document.querySelectorAll('.nav-link');
-
     function setActivePage(pageId) {
-        Object.values(pages).forEach(page => {
-            if(page) page.classList.remove('active-page');
-        });
+        Object.values(pages).forEach(p => p?.classList.remove('active-page'));
         if(pages[pageId]) pages[pageId].classList.add('active-page');
         navLinks.forEach(link => {
             const linkPage = link.getAttribute('data-page');
-            if(linkPage === pageId) {
-                link.classList.add('active');
-            } else {
-                link.classList.remove('active');
-            }
+            link.classList.toggle('active', linkPage === pageId);
         });
         window.location.hash = pageId;
     }
-
     navLinks.forEach(link => {
         link.addEventListener('click', (e) => {
             e.preventDefault();
-            const pageId = link.getAttribute('data-page');
-            if(pageId) setActivePage(pageId);
+            setActivePage(link.getAttribute('data-page'));
         });
     });
-
-    const pageLinkBtns = document.querySelectorAll('[data-page-link]');
-    pageLinkBtns.forEach(btn => {
+    document.querySelectorAll('[data-page-link]').forEach(btn => {
         btn.addEventListener('click', (e) => {
             e.preventDefault();
             const target = btn.getAttribute('data-page-link');
             if(target && pages[target]) setActivePage(target);
         });
     });
-
-    function handleHashChange() {
+    function hashChange() {
         let hash = window.location.hash.substring(1);
-        if(hash && pages[hash]) {
-            setActivePage(hash);
-        } else if(!hash) {
-            setActivePage('home');
-        }
+        if(hash && pages[hash]) setActivePage(hash);
+        else setActivePage('home');
     }
-    window.addEventListener('hashchange', handleHashChange);
-    if(!window.location.hash || !pages[window.location.hash.substring(1)]) {
-        setActivePage('home');
-    } else {
-        handleHashChange();
-    }
+    window.addEventListener('hashchange', hashChange);
+    if(!window.location.hash || !pages[window.location.hash.substring(1)]) setActivePage('home');
+    else hashChange();
 
-    // 联系表单模拟提示
-    const submitBtn = document.getElementById('mockSubmitBtn');
-    if(submitBtn) {
-        submitBtn.addEventListener('click', () => {
-            alert('感谢您的咨询！会尽快联系您，或直接致电 15818510728。');
-        });
-    }
-
-    // 微信悬浮窗 + 模态框逻辑
+    // 表单提示
+    document.getElementById('mockSubmitBtn')?.addEventListener('click', () => alert('感谢咨询！我们会尽快联系，或直接致电15818510728。'));
+    // 微信浮窗
     const floatBtn = document.getElementById('wechatFloatBtn');
     const modal = document.getElementById('wechatModal');
-    const closeModalBtn = document.getElementById('closeModalBtn');
-    
-    function openModal() {
-        modal.style.display = 'flex';
-    }
-    function closeModal() {
-        modal.style.display = 'none';
-    }
-    if(floatBtn) {
-        floatBtn.addEventListener('click', openModal);
-    }
-    if(closeModalBtn) {
-        closeModalBtn.addEventListener('click', closeModal);
-    }
-    // 点击模态框背景关闭
-    modal.addEventListener('click', (e) => {
-        if(e.target === modal) {
-            closeModal();
-        }
+    const closeModal = document.getElementById('closeModalBtn');
+    floatBtn?.addEventListener('click', () => modal.style.display = 'flex');
+    closeModal?.addEventListener('click', () => modal.style.display = 'none');
+    modal?.addEventListener('click', (e) => { if(e.target === modal) modal.style.display = 'none'; });
+    document.getElementById('copyWechatBtn')?.addEventListener('click', () => {
+        navigator.clipboard.writeText('15818510728').then(() => alert('微信号 15818510728 已复制，可前往微信添加好友。')).catch(() => alert('手动复制：15818510728'));
     });
-    // 复制微信号功能
-    const copyBtn = document.getElementById('copyWechatBtn');
-    if(copyBtn) {
-        copyBtn.addEventListener('click', () => {
-            const wechatNumber = 'XR15818510728';
-            navigator.clipboard.writeText(wechatNumber).then(() => {
-                alert('微信号 "15818510728" 已复制，可前往微信添加好友。');
-            }).catch(() => {
-                alert('请手动复制微信号：15818510728');
-            });
-        });
-    }
 </script>
 </body>
 </html>
